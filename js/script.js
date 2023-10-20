@@ -15,7 +15,7 @@ function simonSays () {
     let seconds = 10;
     const countDown = setInterval(countdown, 1000);
     setTimeout(removeNumbers,10000);
-    
+
 
     function countdown(){
         const countdownBox = document.getElementById('countdown');
@@ -49,8 +49,8 @@ function getNumbers (){
 }
 
 function removeNumbers (){
-    const boxNumbers = document.getElementById('box-numbers');
-    boxNumbers.classList.add('d-none');
+    const countdownBox = document.getElementById('countdown-box');
+    countdownBox.classList.add('d-none');
 }
 
 
