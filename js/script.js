@@ -8,11 +8,25 @@ simonSays();
 function simonSays () {
 
     const boxNumbers = document.getElementById('box-numbers'); 
-
+     
 
     numGen = getNumbers();
     boxNumbers.innerHTML = numGen;
+    let seconds = 10;
+    const countDown = setInterval(countdown, 1000);
+
+    function countdown(){
+        const countdownBox = document.getElementById('countdown');
+        if (seconds > 0){
+            seconds -=1;
+            countdownBox.innerHTML = seconds;
+        } else {
+            clearInterval(countdown);
+        }
+    }
+    
 }
+
 
 // generare i numeri randomici 
 function getNumbers (){
@@ -31,6 +45,7 @@ function getNumbers (){
     console.log (nGen);
     return nGen;
 }
+
 
 
 // utility
