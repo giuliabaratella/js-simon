@@ -2,6 +2,7 @@
     --color-primary: #2758d7;
     --color-secondary: #00a148;
     --color-bg-numbers: #ff672e;
+    --color-numbers: #ffbf00;
 }
 
 
@@ -31,6 +32,7 @@ main h1{
     font-size: 3em;
     width: max-content;
     margin: 0 auto;
+    border: 5px solid var(--color-bg-numbers);
 }
 
 #win-box {
@@ -42,4 +44,20 @@ main h1{
     bottom: 10px;
     right: 10px;
     color: white;
+}
+
+.btn {
+    font-size: 2em;
+}
+
+.user-number {
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 3em;
+    text-align: center;
+    border: 5px solid var(--color-bg-numbers);
+}
+
+.user-number:focus {
+    border: 3px solid var(--color-bg-numbers);
 }
