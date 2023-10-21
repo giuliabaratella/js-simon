@@ -8,13 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="text-center m-5 text-uppercase">Simon says</h1>
-    <div id="countdown-box" class="container text-center m-5 text-uppercase">
-        <h2>Memorizza questi numeri</h2>
-        <h5 >
-            Hai solo <span id="countdown">10</span> secondi!
-        </h5>
-        <div id="box-numbers"></div>
+    <div class="container">
+        <h1 class="text-center m-5 text-uppercase">Simon says</h1>
+        <div id="countdown-box" class="text-center m-5 text-uppercase">
+            <h2>Memorizza questi numeri</h2>
+            <h5 >
+                Hai solo <span id="countdown">10</span> secondi!
+            </h5>
+            <div id="box-numbers"></div>
+        </div>
+        <div class=" text-center m-5 text-uppercase">
+            <h2>Inserisci i 5 numeri</h2>
+            <div class="py-4">
+                <input type="text" name="user-number" class="user-number">
+                <input type="text" name="user-number" class="user-number">
+                <input type="text" name="user-number" class="user-number">
+                <input type="text" name="user-number" class="user-number">
+                <input type="text" name="user-number" class="user-number">
+            </div>
+            <button id="button" class="btn btn-primary">Invia</button>
+            <div id="warning"></div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
