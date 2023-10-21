@@ -9,9 +9,9 @@ function simonSays () {
 
     const boxNumbers = document.getElementById('box-numbers'); 
     const btn =  document.getElementById('button'); 
-    const myalert = document.getElementById('warning'); 
+    const winBox = document.getElementById('win-box');
 
-    numGen = getNumbers();
+    let numGen = getNumbers();
     boxNumbers.innerHTML = numGen;
     let seconds = 10;
     const countDown = setInterval(countdown, 1000);
@@ -77,7 +77,19 @@ function simonSays () {
     // validate user numbers 
     function validateUserNumbers (){
         let arrayUser = getUserNumbers();
-        console.log(arrayUser);
+        // console.log(numGen);
+        // console.log(arrayUser);
+
+        let guessedNumbers = [];
+        for (let i = 0; i < numGen.length; i++){
+            if (numGen.includes(arrayUser[i])){
+                guessedNumbers.push(arrayUser[i]);
+            }
+        }
+        // console.log(guessedNumbers)
+        winBox.classList.remove ('d-none');
+        winBox.innerHTML = `Hai indovinato ${guessedNumbers.length} numeri! <br>
+        ${guessedNumbers}` 
     }
 
 
