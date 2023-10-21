@@ -1,0 +1,45 @@
+:root{
+    --color-primary: #2758d7;
+    --color-secondary: #00a148;
+    --color-bg-numbers: #ff672e;
+}
+
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: top;
+    font-family: 'Fredoka', sans-serif;
+}
+main {
+    padding-top: 200px;
+}
+main h1{
+    font-weight: 900;
+    font-size: 6em;
+    color: var(--color-primary);
+}
+#countdown-box h2, #input-box h2 {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+#box-numbers, #win-box {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 3em;
+    width: max-content;
+    margin: 0 auto;
+}
+
+#win-box {
+    font-size: 2em;
+}
+
+#attribution {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+}

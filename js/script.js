@@ -87,8 +87,10 @@ function simonSays () {
         }
         // console.log(guessedNumbers)
         winBox.classList.remove ('d-none');
-        winBox.innerHTML = `Hai indovinato ${guessedNumbers.length} numeri! <br>
-        ${guessedNumbers}` 
+        winBox.innerHTML = `Hai indovinato ${guessedNumbers.length} numeri!
+        <div class= "fw-bold"> ${guessedNumbers} </div>
+        I numeri da indovinare erano:
+        <div class= "fw-bold">${numGen}</div>` 
     }
 
 
