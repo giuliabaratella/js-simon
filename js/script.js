@@ -8,7 +8,8 @@ function simonSays () {
     const btn =  document.getElementById('button'); 
     const winBox = document.getElementById('win-box');
     const inputBox = document.getElementById('input-box');
-
+    const resetBtn = document.getElementById('reset-btn');
+    const resultBox = document.getElementById('result-box');
     let numGen = getNumbers();
     boxNumbers.innerHTML = numGen;
     let seconds = 10;
@@ -86,11 +87,13 @@ function simonSays () {
             }
         }
         // console.log(guessedNumbers)
-        winBox.classList.remove ('d-none');
+        inputBox.classList.add('d-none');
+        resultBox.classList.remove ('d-none');
         winBox.innerHTML = `Hai indovinato ${guessedNumbers.length} numeri!
         <div class= "fw-bold"> ${guessedNumbers} </div>
         I numeri da indovinare erano:
         <div class= "fw-bold">${numGen}</div>` 
+        resetBtn.classList.remove('d-none');
     }
 
 
