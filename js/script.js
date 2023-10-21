@@ -1,6 +1,3 @@
-// Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 30 secondi.
-
-
 
 simonSays();
 
@@ -10,6 +7,7 @@ function simonSays () {
     const boxNumbers = document.getElementById('box-numbers'); 
     const btn =  document.getElementById('button'); 
     const winBox = document.getElementById('win-box');
+    const inputBox = document.getElementById('input-box');
 
     let numGen = getNumbers();
     boxNumbers.innerHTML = numGen;
@@ -56,6 +54,7 @@ function simonSays () {
     function removeNumbers (){
         const countdownBox = document.getElementById('countdown-box');
         countdownBox.classList.add('d-none');
+        inputBox.classList.remove('d-none');
     }
 
     // get user numbers 
