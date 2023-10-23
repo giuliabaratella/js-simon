@@ -1,4 +1,4 @@
-
+"use strict";
 simonSays();
 
 // funzione generale
@@ -12,9 +12,9 @@ function simonSays () {
     const resultBox = document.getElementById('result-box');
     let numGen = getNumbers();
     boxNumbers.innerHTML = numGen;
-    let seconds = 10;
+    let seconds = 30;
     const countDown = setInterval(countdown, 1000);
-    setTimeout(removeNumbers,10000);
+    setTimeout(removeNumbers,30000);
 
     btn.addEventListener('click', validateUserNumbers);
     
@@ -64,7 +64,7 @@ function simonSays () {
         const userNumbers = document.getElementsByClassName('user-number');
         
         for (let i = 0; i < userNumbers.length; i++){
-            let el = parseInt( userNumbers[i].value);
+            let el = ( userNumbers[i].value);
             console.log(el);
             if (!isNaN(el)){
                 nUser.push(el);
